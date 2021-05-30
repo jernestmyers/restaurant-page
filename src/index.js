@@ -1,4 +1,4 @@
-import {loadHeader, loadLandingContent} from './landing.js';
+import {loadHeader, loadLandingContent, loadFooter} from './landing.js';
 import {loadMenuContent} from './menu.js';
 import {loadContactContent} from './contact.js';
 
@@ -20,13 +20,13 @@ function displayPage(e) {
     } else if (e.target.textContent === `find us`) {
         contentContainer.appendChild(compileContactContent());
     }
-    console.log(e.target.textContent);
 }
 
-// loads header as firstChild to body
+// loads header and footer on page load
 document.body.insertBefore(loadHeader(), contentContainer);
+document.body.appendChild(loadFooter());
 
-// loads landing page as onlyChild to #content
+// loads landing page as onlyChild to #content on page load
 function compileLandingContent() {
     return loadLandingContent(contentContainer);
 }
@@ -37,8 +37,6 @@ contentContainer.appendChild(compileLandingContent());
 function compileMenuContent() {
     return loadMenuContent(contentContainer);
 }
-
-// contentContainer.appendChild(compileMenuContent());
 
 function compileContactContent() {
     return loadContactContent(contentContainer);

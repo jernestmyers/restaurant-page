@@ -49,7 +49,30 @@ function loadLandingContent(container) {
     container.appendChild(pageTextContent);
 }
 
+function loadFooter() {
+    const footerContainer = document.createElement(`footer`);
+    const footerContent = document.createElement(`p`);
+    const twitterIcon = document.createElement(`img`);
+    const instagramIcon = document.createElement(`img`);
+    const yelpIcon = document.createElement(`img`);
+
+    footerContainer.setAttribute(`id`, `footer-container`);
+    twitterIcon.setAttribute(`src`, `../src/imgs/twitter.svg`);
+    twitterIcon.classList.add(`footer-icons`);
+    instagramIcon.setAttribute(`src`, `../src/imgs/instagram.png`);
+    instagramIcon.classList.add(`footer-icons`);
+    yelpIcon.setAttribute(`src`, `../src/imgs/yelp.jpg`);
+    yelpIcon.classList.add(`footer-icons`);
+
+    footerContainer.appendChild(twitterIcon);
+    footerContainer.appendChild(instagramIcon);
+    footerContainer.appendChild(yelpIcon);
+
+    return footerContainer
+}
+
 export {
     loadHeader,
-    loadLandingContent
+    loadLandingContent,
+    loadFooter
 } 
