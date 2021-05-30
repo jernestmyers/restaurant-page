@@ -11,7 +11,7 @@ function loadMenuContent(container) {
     const piesText = document.createElement(`p`);
 
     menuContainer.setAttribute(`id`, `menu-container`);
-    drinks.setAttribute(`src`, `./imgs/toddler-cappucino.jpg`);
+    drinks.setAttribute(`src`, `imgs/toddler-cappucino.jpg`);
     cookies.setAttribute(`src`, `../dist/imgs/cookies.jpg`);
     cupcakes.setAttribute(`src`, `../dist/imgs/cupcakes.jpg`);
     pies.setAttribute(`src`, `../dist/imgs/pies.png`);
