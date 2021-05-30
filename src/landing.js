@@ -17,10 +17,11 @@ function loadHeader() {
     navMenu.appendChild(aboutButton);
     navMenu.appendChild(menuButton);
     navMenu.appendChild(contactButton);
-    return pageHeader;  
+
+    return pageHeader;
 }
 
-function loadLandingContent() {
+function loadLandingContent(container) {
     const welcomeMessage = document.createElement(`h2`);
     const imageContainer = document.createElement(`div`);
     const childBaker = document.createElement(`img`);
@@ -32,9 +33,20 @@ function loadLandingContent() {
     imageContainer.setAttribute(`id`, `image-container`);
     welcomeMessage.textContent = `welcome to where the wee ones run the show!`
     childBaker.setAttribute(`src`, `../src/imgs/toddler-baking-mom.jpg`);
+    childBarista.setAttribute(`src`, `../src/imgs/toddler-barista-machine.jpg`);
+    childBakers.setAttribute(`src`, `../src/imgs/toddlers-baking.png`);
+    childMessyBaker.setAttribute(`src`, `../src/imgs/toddler-sticky-fingers.jpg`);
 
     imageContainer.appendChild(childBaker);
-    return imageContainer;
+    imageContainer.appendChild(childBarista);
+    imageContainer.appendChild(childBakers);
+    imageContainer.appendChild(childMessyBaker);
+
+    pageTextContent.textContent = `why toddler bakery & cafe? we know how to have fun and we are sure to put a smile on your face! we may burn the cookies, forget to wash our hands, or be incomprehensible, but we're earnest and cute and that's enough.`;
+
+    container.appendChild(welcomeMessage);
+    container.appendChild(imageContainer);
+    container.appendChild(pageTextContent);
 }
 
 export {
