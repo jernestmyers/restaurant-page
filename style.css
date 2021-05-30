@@ -1,0 +1,145 @@
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #DAB6C4;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Indie Flower', cursive;
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 1.75rem;
+    margin: 0px 5px;
+    padding: 0px;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 15px;
+    padding: 0px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+button {
+    margin: 0px 10px;
+    background-color: #FEFFA5;
+    font-family: 'Indie Flower', cursive;
+    font-size: 1rem;
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+    border-style: none;
+}
+
+button:hover {
+    background-color: #DAB6C4;
+}
+
+header,
+footer {
+    background-color: #B4DC7F;
+    margin: 0px;
+    height: 50px; 
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+}
+
+#content {
+    padding-bottom: 50px;
+    margin-bottom: auto;
+}
+
+footer {
+    justify-content: center;
+    position: fixed;
+    height: 40px;
+    bottom: 0px;
+}
+
+nav {
+    margin-right: 5px;
+    text-align: right;
+    flex-grow: 1;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+#image-container,
+#menu-container,
+#contact-container {
+    display: grid;
+    justify-items: center;
+    align-items: center;    
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 5px;
+    margin: auto;
+    width: 450px;
+    height: 450px;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 80%;
+    margin: 10px auto;
+    text-align: justify;
+}
+
+#menu-container {
+    margin-top: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    height: 750px;
+    margin-bottom: 30px;
+}
+
+#contact-container {
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "contact contact"
+        "hours map";
+    width: 600px;
+    height: 400px;
+}
+
+#address-container {
+    grid-area: contact;
+    width: 100%;
+}
+
+#map-container {
+    grid-area: map;
+}
+
+#hours-container {
+    grid-area: hours;
+    width: 100%;
+}
+
+.contact-text {
+    text-align: center;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.footer-icons {
+    padding: 0px 20px;
+    width: 30px;
+    height: 30px;
+}
