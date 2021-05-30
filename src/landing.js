@@ -32,7 +32,7 @@ function loadLandingContent(container) {
 
     imageContainer.setAttribute(`id`, `image-container`);
     welcomeMessage.textContent = `welcome to where the wee ones run the show!`
-    childBaker.setAttribute(`src`, `./imgs/toddler-baking-mom.jpg`);
+    childBaker.setAttribute(`src`, `../src/imgs/toddler-baking-mom.jpg`);
     childBarista.setAttribute(`src`, `../src/imgs/toddler-barista-machine.jpg`);
     childBakers.setAttribute(`src`, `../src/imgs/toddlers-baking.png`);
     childMessyBaker.setAttribute(`src`, `../src/imgs/toddler-sticky-fingers.jpg`);
