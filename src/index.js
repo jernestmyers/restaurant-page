@@ -3,24 +3,25 @@ import {loadMenuContent} from './menu.js';
 import {loadContactContent} from './contact.js';
 
 const contentContainer = document.querySelector(`#content`);
-window.addEventListener(`click`, displayPage);
 
-function displayPage(e) {
-    if (e.target.textContent === `about`||
-        e.target.textContent === `menu` ||
-        e.target.textContent === `find us`) {
-            while(contentContainer.lastChild) {
-                contentContainer.removeChild(contentContainer.lastChild);
+// clears #content container and loads appropriate content
+window.addEventListener(`click`, displayPage);
+    function displayPage(e) {
+        if (e.target.textContent === `about`||
+            e.target.textContent === `menu` ||
+            e.target.textContent === `find us`) {
+                while(contentContainer.lastChild) {
+                    contentContainer.removeChild(contentContainer.lastChild);
+                }
             }
+        if (e.target.textContent === `about`) {
+            contentContainer.appendChild(compileLandingContent());
+        } else if (e.target.textContent === `menu`) {
+            contentContainer.appendChild(compileMenuContent());
+        } else if (e.target.textContent === `find us`) {
+            contentContainer.appendChild(compileContactContent());
         }
-    if (e.target.textContent === `about`) {
-        contentContainer.appendChild(compileLandingContent());
-    } else if (e.target.textContent === `menu`) {
-        contentContainer.appendChild(compileMenuContent());
-    } else if (e.target.textContent === `find us`) {
-        contentContainer.appendChild(compileContactContent());
     }
-}
 
 // loads header and footer on page load
 document.body.insertBefore(loadHeader(), contentContainer);

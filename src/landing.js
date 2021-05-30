@@ -61,7 +61,7 @@ function loadFooter() {
     twitterIcon.classList.add(`footer-icons`);
     instagramIcon.setAttribute(`src`, `../src/imgs/instagram.png`);
     instagramIcon.classList.add(`footer-icons`);
-    yelpIcon.setAttribute(`src`, `../src/imgs/yelp.jpg`);
+    yelpIcon.setAttribute(`src`, `../src/imgs/yelp-burst.png`);
     yelpIcon.classList.add(`footer-icons`);
 
     footerContainer.appendChild(twitterIcon);
