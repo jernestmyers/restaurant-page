@@ -1,5 +1,6 @@
 import {loadHeader, loadLandingContent} from './landing.js';
 import {loadMenuContent} from './menu.js';
+import {loadContactContent} from './contact.js';
 
 const contentContainer = document.querySelector(`#content`);
 window.addEventListener(`click`, displayPage);
@@ -17,7 +18,7 @@ function displayPage(e) {
     } else if (e.target.textContent === `menu`) {
         contentContainer.appendChild(compileMenuContent());
     } else if (e.target.textContent === `find us`) {
-        contentContainer.innerHTML = `you are here.`;
+        contentContainer.appendChild(compileContactContent());
     }
     console.log(e.target.textContent);
 }
@@ -38,3 +39,7 @@ function compileMenuContent() {
 }
 
 // contentContainer.appendChild(compileMenuContent());
+
+function compileContactContent() {
+    return loadContactContent(contentContainer);
+}

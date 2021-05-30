@@ -1,4 +1,5 @@
 function loadMenuContent(container) {
+    const menuHeader = document.createElement(`h2`);
     const menuContainer = document.createElement(`div`);
     const drinks = document.createElement(`img`);
     const cookies = document.createElement(`img`);
@@ -15,6 +16,7 @@ function loadMenuContent(container) {
     cupcakes.setAttribute(`src`, `../src/imgs/cupcakes.jpg`);
     pies.setAttribute(`src`, `../src/imgs/pies.png`);
 
+    menuHeader.textContent = `menu`;
     drinksText.textContent = `coffee drinks: $3`;
     cookiesText.textContent = `cookies: $2 each`;
     cupcakesText.textContent = `cupcakes: $3 each`;
@@ -29,6 +31,7 @@ function loadMenuContent(container) {
     menuContainer.appendChild(pies);
     menuContainer.appendChild(piesText);
 
+    container.appendChild(menuHeader);
     container.appendChild(menuContainer);
 }
 
