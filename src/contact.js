@@ -13,7 +13,7 @@ function loadContactContent(container) {
     addressContainer.setAttribute(`id`, `address-container`);
     hoursContainer.setAttribute(`id`, `hours-container`);
     mapContainer.setAttribute(`id`, `map-container`);
-    map.setAttribute(`src`, `../src/imgs/map.png`);
+    map.setAttribute(`src`, `../dist/imgs/map.png`);
     hours.innerHTML = `<strong>open daily</strong> <br><br>mornings: 7am to 11am<br><br><em>closed for nap time</em><br><br>afternoons: 2pm to 5pm`; 
     address.innerHTML = `<strong>address</strong><br>123 e austin st, austin, tx 78702<br><br><strong>phone</strong><br>512-123-4567`
     address.classList.add(`contact-text`);

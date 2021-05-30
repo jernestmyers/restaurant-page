@@ -11,10 +11,10 @@ function loadMenuContent(container) {
     const piesText = document.createElement(`p`);
 
     menuContainer.setAttribute(`id`, `menu-container`);
-    drinks.setAttribute(`src`, `../src/imgs/toddler-cappucino.jpg`);
-    cookies.setAttribute(`src`, `../src/imgs/cookies.jpg`);
-    cupcakes.setAttribute(`src`, `../src/imgs/cupcakes.jpg`);
-    pies.setAttribute(`src`, `../src/imgs/pies.png`);
+    drinks.setAttribute(`src`, `../dist/imgs/toddler-cappucino.jpg`);
+    cookies.setAttribute(`src`, `../dist/imgs/cookies.jpg`);
+    cupcakes.setAttribute(`src`, `../dist/imgs/cupcakes.jpg`);
+    pies.setAttribute(`src`, `../dist/imgs/pies.png`);
 
     menuHeader.textContent = `menu`;
     drinksText.textContent = `coffee drinks: $3`;
