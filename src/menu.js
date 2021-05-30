@@ -12,9 +12,9 @@ function loadMenuContent(container) {
 
     menuContainer.setAttribute(`id`, `menu-container`);
     drinks.setAttribute(`src`, `imgs/toddler-cappucino.jpg`);
-    cookies.setAttribute(`src`, `../dist/imgs/cookies.jpg`);
-    cupcakes.setAttribute(`src`, `../dist/imgs/cupcakes.jpg`);
-    pies.setAttribute(`src`, `../dist/imgs/pies.png`);
+    cookies.setAttribute(`src`, `imgs/cookies.jpg`);
+    cupcakes.setAttribute(`src`, `imgs/cupcakes.jpg`);
+    pies.setAttribute(`src`, `imgs/pies.png`);
 
     menuHeader.textContent = `menu`;
     drinksText.textContent = `coffee drinks: $3`;

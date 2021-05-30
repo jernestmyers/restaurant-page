@@ -32,10 +32,10 @@ function loadLandingContent(container) {
 
     imageContainer.setAttribute(`id`, `image-container`);
     welcomeMessage.textContent = `welcome to where the wee ones run the show!`
-    childBaker.setAttribute(`src`, `../dist/imgs/toddler-baking-mom.jpg`);
-    childBarista.setAttribute(`src`, `../dist/imgs/toddler-barista-machine.jpg`);
-    childBakers.setAttribute(`src`, `../dist/imgs/toddlers-baking.png`);
-    childMessyBaker.setAttribute(`src`, `../dist/imgs/toddler-sticky-fingers.jpg`);
+    childBaker.setAttribute(`src`, `imgs/toddler-baking-mom.jpg`);
+    childBarista.setAttribute(`src`, `imgs/toddler-barista-machine.jpg`);
+    childBakers.setAttribute(`src`, `imgs/toddlers-baking.png`);
+    childMessyBaker.setAttribute(`src`, `imgs/toddler-sticky-fingers.jpg`);
 
     imageContainer.appendChild(childBaker);
     imageContainer.appendChild(childBarista);
@@ -57,11 +57,11 @@ function loadFooter() {
     const yelpIcon = document.createElement(`img`);
 
     footerContainer.setAttribute(`id`, `footer-container`);
-    twitterIcon.setAttribute(`src`, `../dist/imgs/twitter.svg`);
+    twitterIcon.setAttribute(`src`, `imgs/twitter.svg`);
     twitterIcon.classList.add(`footer-icons`);
-    instagramIcon.setAttribute(`src`, `../dist/imgs/instagram.png`);
+    instagramIcon.setAttribute(`src`, `imgs/instagram.png`);
     instagramIcon.classList.add(`footer-icons`);
-    yelpIcon.setAttribute(`src`, `../dist/imgs/yelp-burst.png`);
+    yelpIcon.setAttribute(`src`, `imgs/yelp-burst.png`);
     yelpIcon.classList.add(`footer-icons`);
 
     footerContainer.appendChild(twitterIcon);
